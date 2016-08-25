@@ -23,5 +23,13 @@ def form():
 def login():
     return render_template('login.html')
 
+@app.route('/solution15')
+def solution15():
+    return render_template('solution15.html')
+
+@app.route('/solution16')
+def solution16():
+    return render_template('solution16.html')
+
 if __name__ == '__main__':
     app.run()
