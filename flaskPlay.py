@@ -37,5 +37,9 @@ def solution15():
 def solution16():
     return render_template('solution16.html')
 
+@app.route('/inputs')
+def inputs():
+    return render_template('inputs.html')
+
 if __name__ == '__main__':
     app.run()
