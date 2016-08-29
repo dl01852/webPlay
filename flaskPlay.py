@@ -46,5 +46,9 @@ def inputs():
 def inlineCss():
     return render_template('inlineCSS.html')
 
+@app.route('/cssTest')
+def cssTest():
+    return render_template('cssTest.html')
+
 if __name__ == '__main__':
     app.run()
