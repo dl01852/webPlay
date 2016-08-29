@@ -41,5 +41,10 @@ def solution16():
 def inputs():
     return render_template('inputs.html')
 
+
+@app.route('/inlineCss')
+def inlineCss():
+    return render_template('inlineCSS.html')
+
 if __name__ == '__main__':
     app.run()

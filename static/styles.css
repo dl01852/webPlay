@@ -1,0 +1,20 @@
+em {
+    font-weight: bold;
+    color: black;
+
+    }
+h1
+{
+    font-family: Tahoma, Helvetica, sans-serif;
+}
+
+p
+{
+    font-family: arial, sans-serif;
+    color: purple;
+}
+.special
+{
+    color: aquamarine;
+
+}
