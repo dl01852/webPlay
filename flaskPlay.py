@@ -58,5 +58,9 @@ def csPlay():
 def borderControl():
     return render_template('borderControl.html')
 
+@app.route('/module2')
+def module2():
+    return render_template('Module_2.html')
+
 if __name__ == '__main__':
     app.run()
