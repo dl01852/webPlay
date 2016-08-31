@@ -19,7 +19,12 @@ p
 
 }
 
-ol
+ul
+{
+    color: goldenrod;
+}
+
+ol.ordered
 {
     color:crimson;
 }

@@ -50,5 +50,13 @@ def inlineCss():
 def cssTest():
     return render_template('cssTest.html')
 
+@app.route('/CSPlay')
+def csPlay():
+    return render_template('cssPlay.html')
+
+@app.route('/borderPlay')
+def borderControl():
+    return render_template('borderControl.html')
+
 if __name__ == '__main__':
     app.run()
