@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles.css') }}">
+</head>
+<body>
+
+<ul> <!-- Outer list(peridos) -->
+    <li>You have access to new media when it becomes public:
+        <ul> <!-- inner lisst (open circles) -->
+            <li> New Games</li>
+
+            <li> New applications
+                <ol class="ordered"> <!-- inner  inner list (numbered) -->
+                    <li>For business</li>
+                    <li>For Pleasure</li>
+                </ol>
+            </li>
+
+            <li>Around the clock news</li>
+            <li>Shopping</li>
+
+            <li>Programming
+                <ol class="ordered">
+                    <li>Java</li>
+                    <li><a href="http://www.python.org" target="_blank">Python</a></li>
+                    <li><a href="https://msdn.microsoft.com/en-us/library/67ef8sbd.aspx" target="_blank">C#</a></li>
+                    <li><a href="http://www.cprogramming.com/" target="_blank">C</a></li>
+                    <li><a href="http://www.cplusplus.com" target="_blank">C++</a></li>
+                    <li><a href=http://www.w3schools.com/html/html5_intro.asp target="_blank"> HTML</a></li>
+                </ol>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+    <div class="solid"> Solid Border</div><hr>
+    <div class="double"> Double Border</div><hr>
+    <div class="groove"> Groove Border</div><hr>
+    <div class="inset"> inset border</div><hr>
+    <div class="outset" style="border-color: pink"> outset border</div><hr>
+    <div class="dashed red thin">dashed border</div><hr>
+    <div class="thick dotted orange"> thick dotted orange border</div><hr>
+
+</body>
+</html>

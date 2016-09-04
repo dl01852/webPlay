@@ -37,6 +37,7 @@ def solution15():
 def solution16():
     return render_template('solution16.html')
 
+
 @app.route('/inputs')
 def inputs():
     return render_template('inputs.html')
@@ -46,21 +47,40 @@ def inputs():
 def inlineCss():
     return render_template('inlineCSS.html')
 
+
 @app.route('/cssTest')
 def cssTest():
     return render_template('cssTest.html')
+
 
 @app.route('/CSPlay')
 def csPlay():
     return render_template('cssPlay.html')
 
+
 @app.route('/borderPlay')
 def borderControl():
     return render_template('borderControl.html')
 
-@app.route('/module2')
+
+@app.route('/m2e1')
 def module2():
-    return render_template('Module_2.html')
+    return render_template('M2E1.html')
+
+
+@app.route('/m2e2')
+def m2e2():
+    return render_template('M2E2.html')
+
+
+@app.route('/m2e3')
+def m2e3():
+    return render_template('M2E3.html')
+
+
+@app.route('/m2e4')
+def m2e4():
+    return render_template('M2E4.html')
 
 if __name__ == '__main__':
     app.run()

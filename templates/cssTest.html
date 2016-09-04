@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+    {#    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">#}
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 
-<p>
-    Can this be seen with Css
-</p>
+<input list="music Genre">
+
+<datalist id="music Genre">
+    <option value="rap">
+    <option value="hip-hop">
+    <option value="metal">
+    <option value="jazz">
+    <option value="gospel">
+    <option value="rock">
+    <option value="country">
+    <option value="reggae">
+
+
+
+</datalist>
 
 </body>
 </html>

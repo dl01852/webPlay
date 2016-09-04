@@ -2,30 +2,104 @@ em {
     font-weight: bold;
     color: black;
 
-    }
-h1
-{
+}
+
+h1 {
     font-family: Tahoma, Helvetica, sans-serif;
 }
 
-p
-{
+p {
     font-family: arial, sans-serif;
     color: darkorange;
 }
-.special
-{
+
+.special {
     color: aquamarine;
 
 }
 
-ul
-{
+ul {
     color: goldenrod;
+
+
+}
+li {
+
 }
 
-ol.ordered
-{
-    color:crimson;
+ol.ordered {
+    color: crimson;
+}
+
+div {
+    text-align: center;
+    width: 50%;
+    border-width: 6px;
+    left: 25%;
+    position: relative;
+}
+
+
+hr {
+    padding-bottom: 5px;
+}
+
+.border {
+    border-width: 15px
+}
+
+.thick {
+    border-width: thick
+}
+
+.medium {
+    border-width: medium
+}
+
+.thin {
+    border-width: thin
+}
+
+.solid {
+    border-style: solid
+}
+
+.double {
+    border-style: double
+}
+
+.groove {
+    border-style: groove
+}
+
+.rigid {
+    border-style: ridge
+}
+
+.dotted {
+    border-style: dotted
+}
+
+.inset {
+    border-style: inset
+}
+
+.outset {
+    border-style: outset
+}
+
+.dashed {
+    border-style: dashed
+}
+
+.red {
+    border-color: red
+}
+
+.blue {
+    border-color: blue
+}
+.orange {
+    border-color: orange;
 }
 
