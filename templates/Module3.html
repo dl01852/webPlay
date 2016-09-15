@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="{{ url_for('static',filename="powerScript.js") }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename="rollDice.js") }}"></script>
+    <style>
+        th{
+            padding:1em;
+        }
+    </style>
+</head>
+<body id="body">
+<h1>PROBLEM 1</h1>
+<!-- input for the base -->
+<label>base:
+    <input type="text" id="base">
+</label>
+<!-- input for the exponent -->
+<p><label>exp:
+    <input type="text" id="exponent">
+</label>
+</p>
+<p>
+    <input value="Go!" width="2000" type="button" id="GO" onclick="grabData()"> <!-- button -->
+</p>
+<p id="answer">Answer:</p> <!-- result of the power -->
+<br>
+<hr>
+<h1>Problem 2</h1>
+
+<input value="Roll" type="button" id="roll" onclick="display()">
+<div id="stats"></div>
+</body>
+</html>
