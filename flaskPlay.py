@@ -86,5 +86,10 @@ def m2e4():
 @app.route('/module3')
 def module3():
     return render_template('Module3.html')
+
+@app.route('/module4')
+def module4():
+    return render_template('Module4.html')
+
 if __name__ == '__main__':
     app.run()

@@ -15,6 +15,7 @@ function generate() {
             sumDict[dice1 + dice2] = 1; // initialize the first value to 1.
         else
             sumDict[dice1 +dice2] +=1; // else just increment it.
+
     }
 }
 

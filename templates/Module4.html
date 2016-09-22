@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        body{
+            background-color: aquamarine;
+        }
+
+    </style>
+   <script type="text/javascript" src="{{ url_for('static',filename='Module4Functions.js') }}"></script>
+</head>
+<body>
+<form>
+    <label>Date:
+        <input type="date" id="date">
+    </label>
+    <input type="button" value="Format" onclick="timeDisplay()">
+
+    <p id="display">
+
+    </p>
+<hr>
+    <h1>Excercise 12.5</h1>
+    <button style="font-size: medium" onclick="counter()">Click</button>
+    <div id="div">
+        0
+    </div>
+</form>
+</body>
+</html>
