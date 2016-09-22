@@ -91,5 +91,18 @@ def module3():
 def module4():
     return render_template('Module4.html')
 
+
+@app.route('/M4E3')
+def M4E3():
+    return render_template('M4E3.html')
+
+@app.route('/M4E4')
+def M4E4():
+    return render_template('M4E4.html')
+
+@app.route('/M4E5')
+def M4E5():
+    return render_template('M4E5.html')
+
 if __name__ == '__main__':
     app.run()

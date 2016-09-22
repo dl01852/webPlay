@@ -16,10 +16,53 @@ function timeDisplay()
     document.getElementById('display').innerHTML += "<br>" + year + "\\" + month + "\\" + day;
 }
 
-function counter()
-{
-    var counter = document.getElementById('div').innerHTML;
-    counter++;
+function counter() {
+    var counter = parseInt(document.getElementById('div').innerHTML, 10);
+    if (counter == "NaN") {
+        counter = 0
+    }
+    else
+    {
+        counter+=1
+    }
+    document.getElementById('div').innerHTML = counter;
+}
 
+function CanvasCreation()
+{
+    var side = 100;
+    var body = document.getElementById("body");
+
+    for(var i = 0; i < side; i++) {
+        var row = document.createElement("tr");
+
+
+        for (var k = 0; j < side; j++) {
+            var cell = document.createElement("td");
+            row.appendChild(cell);
+        }
+
+        tbody.appendChild(row);
+    }
+
+    document.getElementById("canvas").addEventListener("move",MouseMove,false);
+}
+
+function MouseMove(e)
+{
+    if(e.target.tagName.toLowerCase() == "td")
+    {
+        if(e.ctrlKey)
+        {
+            e.target.setAttribute("class","blue");
+        }
+        if(e.shiftKey)
+            e.target.setAttribute("class","red");
+
+        if(e.altKey)
+        {
+            e.target.setAttribute("class","white");
+        }
+    }
 }
 

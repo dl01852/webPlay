@@ -1,0 +1,10 @@
+#canvas {width: 400px;
+    border: 1px solid #999999;
+    border-collapse: collapse;
+}
+td{
+    width:5px; height: 5px; margin: 0; padding: 0;
+}
+.blue{background-color: blue;}
+.red{background-color:red;}
+.white{background-color:white;}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function helper(data)
+        {
+            data.addEventListener("focus",
+                    function()
+                    {
+                        data.value = data.value.replace(/&/g, "and");
+                    },
+                    false
+            );
+            data.addEventListener("blur",
+                    function()
+                    {
+                        data.value = data.value.replace(/&/g, " and ")
+                    },
+                    false
+            );
+        }
+
+        function start()
+        {
+           helper(document.getElementById("fname"));
+            helper(document.getElementById("lname"));
+            helper(document.getElementById("email"));
+        }
+        window.addEventListener("load",start,false);
+    </script>
+</head>
+<body>
+<form>
+  <input type="text" name="fname" placeholder="First name" id="fname"><br>
+  <input type="text" name="lname" placeholder="Last name" id="lname" ><br>
+    <input type="text" name="email" placeholder="email" id="email"><br>
+  <input type="submit" value="Submit">
+</form>
+</body>
+</html>
